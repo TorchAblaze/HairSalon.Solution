@@ -3,6 +3,14 @@ body {
   background-color: rgb(251, 190, 251);
 }
 
+input[type="submit"] {
+  background-color: rgb(161, 245, 238);
+  border: 2px solid white;
+  border-radius: 50px;
+  color: black;
+  padding: 9px 20px;
+}
+
 ul,
 ol {
   text-align: left;
