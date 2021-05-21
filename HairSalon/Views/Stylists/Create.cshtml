@@ -22,9 +22,9 @@
   @Html.TextBoxFor(model => model.ShiftDays, new { @class="form-control", @required="required"})
   <br>
   @Html.LabelFor(model => model.PhoneNumber)
-  @Html.TextBoxFor(model => model.PhoneNumber, new { @class="form-control", type="tel", @required="required"})
+  @Html.TextBoxFor(model => model.PhoneNumber, new { @class="form-control", @required="required"})
   <br>
   <input type="submit" value="Add new stylist">
 }
 <br>
-<p>@Html.ActionLink("Show all stylists", "Index")</p>
+<p>@Html.ActionLink("Show all stylists", "Index", "Stylists", null, new {@class="button"})</p>
