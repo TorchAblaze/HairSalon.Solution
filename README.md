@@ -1,12 +1,12 @@
-# Project Name
+# Eau Claire's Hair Salon
 
-#### _Brief Project Description, 5/21/2021_
+#### _Web application for managing Claire's Hair Salon, 5/21/2021_
 
 #### By _**Tiffany Greathead**_
 
 ## Description
 
-Project Description.
+A website application for a fictional client named Eau Claire who owns Eau Claire's Salon. Claire can
 
 ## Setup and Use
 
@@ -19,11 +19,11 @@ Project Description.
 
 ### Installation
 
-1. Clone the repository: `$ git clone {clone link}`
-2. Navigate to the `{Template.Solution}` directory on your computer
+1. Clone the repository: `$ git clone https://github.com/TorchAblaze/HairSalon.Solution.git`
+2. Navigate to the `HairSalon` directory on your computer
 3. Open with your preferred text editor to view the code base
 4. To setup a SQL database using MySQL:
-   - Create an `appsettings.json` file in the `{WeekThreeTemplate}` directory
+   - Create an `appsettings.json` file in the `HairSalon` directory
    - Copy the text box below and paste into the `appsettings.json` file, replacing `<password>` with your MySQL password:
    ```
      {
@@ -36,11 +36,11 @@ Project Description.
    - Type the following commands to setup the database:
      - `CREATE DATABASE tiffany_greathead;` to make a new database
      - `USE tiffany_greathead;` to connect to the new database
-     - `CREATE TABLE {template_category (TemplateCategory INT, SomeProperty VARCHAR (255))};` to create a `{template_category}` table
-     - `CREATE TABLE {template_item (TemplateItemId INT, TemplateCategoryId Int)};` to create another new `{template_item}` table
+     - `CREATE TABLE stylists (StylistId INT, Name VARCHAR (255), StartDate VARCHAR (255), ShiftHours VARCHAR (255), ShiftDays VARCHAR (255), PhoneNumber VARCHAR(15));` to create a `stylists` table
+     - `CREATE TABLE clients (ClientId INT, Name VARCHAR (255), AppointmentDateTime VARCHAR(255), PhoneNumber VARCHAR (15), StylistId INT)};` to create another new `clients` table
 5. To run the console app:
-   - Navigate to `{Template.Solution/WeekThreeTemplate}` in your command line
-   - Run the command `dotnet restore` to restore the dependencies that are listed in `{Template.csproj}`
+   - Navigate to `HairSalon.Solution/HairSalon` in your command line
+   - Run the command `dotnet restore` to restore the dependencies that are listed in `HairSalon.csproj`
    - Run the command `dotnet add package Microsoft.EntityFrameworkCore -v 5.0.0`
    - Run the command `dotnet add package Pomelo.EntityFrameworkCore.MySql -v 5.0.0-alpha.2`
    - Run the command `dotnet add package Microsoft.EntityFrameworkCore.Proxies -v 5.0.0`
