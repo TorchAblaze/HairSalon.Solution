@@ -1,0 +1,38 @@
+body {
+  text-align: center;
+  background-color: rgb(251, 190, 251);
+}
+
+ul,
+ol {
+  text-align: left;
+}
+
+a:link,
+a:visited {
+  background-color: #be36f4;
+  color: white;
+  padding: 9px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+div#footer {
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  color: #ccc;
+  background: #333;
+  padding: 8px;
+}
+
+a:link#home {
+  background-color: #f436b5;
+  color: white;
+  padding: 9px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
