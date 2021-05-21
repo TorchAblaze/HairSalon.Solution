@@ -16,19 +16,6 @@ ol {
   text-align: left;
 }
 
-a:link,
-a:visited {
-  background-color: #be36f4c0;
-  color: white;
-  padding: 9px 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  border: 2px solid white;
-  border-radius: 50px;
-  margin: 3px;
-}
-
 div#footer {
   position: fixed;
   bottom: 0px;
@@ -50,4 +37,17 @@ a:visited#home {
   border: 2px solid white;
   border-radius: 50px;
   margin: 5px;
+}
+
+a:link.button,
+a:visited.button {
+  background-color: #be36f4c0;
+  color: white;
+  padding: 9px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border: 2px solid white;
+  border-radius: 50px;
+  margin: 3px;
 }
