@@ -43,11 +43,19 @@ a:link.button,
 a:visited.button {
   background-color: #be36f4c0;
   color: white;
-  padding: 9px 20px;
+  padding: 5px 20px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   border: 2px solid white;
   border-radius: 50px;
-  margin: 3px;
+  margin-top: 3px;
+}
+
+p.blocktext {
+  text-align: left;
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30em;
 }
