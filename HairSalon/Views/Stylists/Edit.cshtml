@@ -1,0 +1,33 @@
+@{
+  Layout = "_Layout";
+}
+
+@model HairSalon.Models.Stylist
+
+<h1>EDIT STYLIST</h1>
+<hr />
+
+<h2>Edit: @Html.DisplayFor(model => model.Name)</h2>
+
+@using (Html.BeginForm())
+{
+  @Html.HiddenFor(model => model.StylistId)
+
+  @Html.LabelFor(model => model.Name)
+  @Html.EditorFor(model => model.Name)
+
+  @Html.LabelFor(model => model.StartDate)
+  @Html.EditorFor(model => model.StartDate)
+
+  @Html.LabelFor(model => model.ShiftHours)
+  @Html.EditorFor(model => model.ShiftHours)
+
+  @Html.LabelFor(model => model.ShiftDays)
+  @Html.EditorFor(model => model.ShiftDays)
+
+  @Html.LabelFor(model => model.PhoneNumber)
+  @Html.EditorFor(model => model.PhoneNumber)
+
+  <input type="submit" value="Save">
+}
+<p>@Html.ActionLink("Back to list", "Index", "Stylists", new { @class="button" })</p>
