@@ -14,20 +14,32 @@
   @Html.HiddenFor(model => model.StylistId)
 
   @Html.LabelFor(model => model.Name)
+  <br>
   @Html.EditorFor(model => model.Name)
-
+  <br>
+  <br>
   @Html.LabelFor(model => model.StartDate)
+  <br>
   @Html.EditorFor(model => model.StartDate)
-
+  <br>
+  <br>
   @Html.LabelFor(model => model.ShiftHours)
+  <br>
   @Html.EditorFor(model => model.ShiftHours)
-
+  <br>
+  <br>
   @Html.LabelFor(model => model.ShiftDays)
+  <br>
   @Html.EditorFor(model => model.ShiftDays)
-
+  <br>
+  <br>
   @Html.LabelFor(model => model.PhoneNumber)
+  <br>
   @Html.EditorFor(model => model.PhoneNumber)
-
+  <br>
+  <br>
   <input type="submit" value="Save">
+  <br>
+  <br>
 }
 <p>@Html.ActionLink("Back to list", "Index", "Stylists", null, new { @class="button" })</p>

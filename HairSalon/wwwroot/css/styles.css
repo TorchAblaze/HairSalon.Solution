@@ -43,7 +43,7 @@ a:link.button,
 a:visited.button {
   background-color: #be36f4c0;
   color: white;
-  padding: 5px 20px;
+  padding: 9px 20px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -52,7 +52,7 @@ a:visited.button {
   margin-top: 3px;
 }
 
-p.blocktext {
+.blocktext {
   text-align: left;
   padding: 10px;
   margin-left: auto;
