@@ -6,7 +6,7 @@
 
 ## Description
 
-A website application for a fictional client named Eau Claire who owns Eau Claire's Salon. Claire can
+A website application for a fictional client named Eau Claire who owns Eau Claire's Salon. Claire can add new stylists to her employee roster and view all her employees in a list. She can click on an employee name to see additional details and contact information about that employee. New clients can be added for each stylist and will appear under that stylist's details page. If Claire clicks on a client name, she can see that client's contact information and any upcoming appointments.
 
 ## Setup and Use
 

@@ -12,6 +12,6 @@
 <p class="blocktext"><strong>Scheduled Work Hours:</strong> @Html.DisplayFor(model => model.ShiftHours)</p>
 <p class="blocktext"><strong>Scheduled Work Days:</strong> @Html.DisplayFor(model => model.ShiftDays)</p>
 <p class="blocktext"><strong>Phone Number:</strong> @Html.DisplayFor(model => model.PhoneNumber)</p>
-<p>@Html.ActionLink("Edit Stylist", "Edit", "Stylists", null, new { id = Model.StylistId, @class="button" })</p>
-<p>@Html.ActionLink("Delete Stylist", "Delete", "Stylists", null, new { id = Model.StylistId, @class="button" })</p>
+<p>@Html.ActionLink("Edit Stylist", "Edit", "Stylists", new { id = Model.StylistId}, new { @class="button" })</p>
+<p>@Html.ActionLink("Delete Stylist", "Delete", "Stylists", new { id = Model.StylistId}, new { @class="button" })</p>
 <p>@Html.ActionLink("Back to list", "Index", "Stylists", null, new { @class="button" })</p>
