@@ -14,7 +14,7 @@ A website application for a fictional client named Eau Claire who owns Eau Clair
 
 - [.NET 5 SDK](https://dotnet.microsoft.com/download/dotnet/5.0)
 - A text editor like [VS Code](https://code.visualstudio.com/)
-- A command line interface like Terminal or GitBash to run and interact with the console app.
+- A command line interface like Terminal or GitBash to run and interact with the console app
 - [MySQL Community Server](https://dev.mysql.com/downloads/file/?id=484914)
 
 ### Installation
