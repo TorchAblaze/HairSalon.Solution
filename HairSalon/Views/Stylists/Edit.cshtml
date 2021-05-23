@@ -7,7 +7,7 @@
 <h1>EDIT STYLIST</h1>
 <hr />
 
-<h2>Edit: @Html.DisplayFor(model => model.Name)</h2>
+<h2>@Html.DisplayFor(model => model.Name)</h2>
 
 @using (Html.BeginForm())
 {
@@ -42,4 +42,5 @@
   <br>
   <br>
 }
+<hr />
 <p>@Html.ActionLink("Back to stylists list", "Index", "Stylists", null, new { @class="button" })</p>

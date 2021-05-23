@@ -31,8 +31,10 @@ else
   }
   </ul>
 }
-
+<br>
+<hr />
+<p>@Html.ActionLink("Add a client", "Create", "Clients", null, new { @class="button" })</p>
 <p>@Html.ActionLink("Edit Stylist", "Edit", "Stylists", new { id = Model.StylistId}, new { @class="button" })</p>
-<p>@Html.ActionLink("Delete Stylist", "Delete", "Stylists", new { id = Model.StylistId}, new { @class="button" })</p>
+<p>@Html.ActionLink("Remove Stylist", "Delete", "Stylists", new { id = Model.StylistId}, new { @class="button" })</p>
 <p>@Html.ActionLink("Back to stylists list", "Index", "Stylists", null, new { @class="button" })</p>
 

@@ -1,6 +1,25 @@
 body {
   text-align: center;
   background-color: rgb(251, 190, 251);
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+p {
+  font-size: large;
+}
+
+a:link,
+a:visited {
+  color: purple;
+  font-size: large;
 }
 
 input[type="submit"] {
@@ -8,8 +27,9 @@ input[type="submit"] {
   border: 2px solid white;
   border-radius: 50px;
   color: black;
+  font-size: small;
   padding: 9px 20px;
-  margin-top: 3px;
+  margin: 3px;
 }
 
 ul,
@@ -21,6 +41,7 @@ input.delete[type="submit"] {
   background-color: rgba(248, 9, 69, 0.733);
   border: 2px solid white;
   border-radius: 50px;
+  font-size: small;
   color: white;
   padding: 9px 20px;
   margin: 3px;
@@ -31,8 +52,8 @@ div#footer {
   bottom: 0px;
   left: 0px;
   width: 100%;
-  color: #ccc;
-  background: #333;
+  color: rgba(255, 255, 255, 0.637);
+  background: rgba(179, 27, 250, 0.2);
   padding: 8px;
 }
 
@@ -40,6 +61,7 @@ a:link#home,
 a:visited#home {
   background-color: #ff00aa77;
   color: white;
+  font-size: small;
   padding: 6px 15px;
   text-align: center;
   text-decoration: none;
@@ -53,6 +75,7 @@ a:link.button,
 a:visited.button {
   background-color: #be36f4c0;
   color: white;
+  font-size: small;
   padding: 9px 20px;
   text-align: center;
   text-decoration: none;
