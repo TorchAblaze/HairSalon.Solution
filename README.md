@@ -6,7 +6,7 @@
 
 ## Description
 
-A website application for a fictional client named Eau Claire who owns Eau Claire's Salon. Claire can add new stylists to her employee roster and view all her employees in a list. She can click on an employee name to see additional details and contact information about that employee. New clients can be added for each stylist and will appear under that stylist's details page. If Claire clicks on a client name, she can see that client's contact information and any upcoming appointments.
+A website application for a fictional client named Eau Claire who owns Eau Claire's Salon. Claire can add new stylists to her employee roster and view all her employees in a list. She can click on an employee name to see additional details and contact information about that employee. New clients can be added for each stylist and will appear under that stylist's details page. If Claire clicks on a client name, she can see that client's contact information and any upcoming appointments that client may have.
 
 ## Setup and Use
 
@@ -15,7 +15,7 @@ A website application for a fictional client named Eau Claire who owns Eau Clair
 - [.NET 5 SDK](https://dotnet.microsoft.com/download/dotnet/5.0)
 - A text editor like [VS Code](https://code.visualstudio.com/)
 - A command line interface like Terminal or GitBash to run and interact with the console app.
-- [MySQL Community Server][https://dev.mysql.com/downloads/file/?id=484914]
+- [MySQL Community Server](https://dev.mysql.com/downloads/file/?id=484914)
 
 ### Installation
 
