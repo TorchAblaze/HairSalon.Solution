@@ -2,16 +2,36 @@
   Layout = "_Layout";
 }
 
-@model HairSalon.Models.Stylist
+@using HairSalon.Models;
+@model HairSalon.Models.Stylist;
 
 <h1>STYLIST INFORMATION</h1>
 <hr />
 
 <h2>@Html.DisplayFor(model => model.Name)</h2>
+<hr />
 <p class="blocktext"><strong>Employee Start Date:</strong> @Html.DisplayFor(model => model.StartDate)</p>
 <p class="blocktext"><strong>Scheduled Work Hours:</strong> @Html.DisplayFor(model => model.ShiftHours)</p>
 <p class="blocktext"><strong>Scheduled Work Days:</strong> @Html.DisplayFor(model => model.ShiftDays)</p>
 <p class="blocktext"><strong>Phone Number:</strong> @Html.DisplayFor(model => model.PhoneNumber)</p>
+
+<h2>@Html.DisplayFor(model => model.Name)'s Clients</h2>
+<hr />
+
+@if (Model.Clients.Count == 0)
+{
+  <h3>This stylist doesn't have any clients yet</h3>
+}
+else
+{
+  <ul>
+  @foreach (Client client in Model.Clients)
+  {
+    <li class="blocktext">@Html.ActionLink($"{@client.Name}", "Details", "Clients", new { id = @client.ClientId})</li>
+  }
+  </ul>
+}
+
 <p>@Html.ActionLink("Edit Stylist", "Edit", "Stylists", new { id = Model.StylistId}, new { @class="button" })</p>
 <p>@Html.ActionLink("Delete Stylist", "Delete", "Stylists", new { id = Model.StylistId}, new { @class="button" })</p>
 <p>@Html.ActionLink("Back to stylists list", "Index", "Stylists", null, new { @class="button" })</p>
