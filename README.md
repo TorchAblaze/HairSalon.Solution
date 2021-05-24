@@ -36,8 +36,8 @@ A website application for a fictional client named Eau Claire who owns Eau Clair
    - Type the following commands to setup the database:
      - `CREATE DATABASE tiffany_greathead;` to make a new database
      - `USE tiffany_greathead;` to connect to the new database
-     - `CREATE TABLE stylists (StylistId INT, Name VARCHAR (255), StartDate VARCHAR (255), ShiftHours VARCHAR (255), ShiftDays VARCHAR (255), PhoneNumber VARCHAR(15));` to create a `stylists` table
-     - `CREATE TABLE clients (ClientId INT, Name VARCHAR (255), AppointmentDateTime VARCHAR(255), PhoneNumber VARCHAR (15), StylistId INT);` to create another new `clients` table
+     - `CREATE TABLE stylists (StylistId INT NOT NULL AUTO_INCREMENT PRIMARY KEY, Name VARCHAR (255), StartDate VARCHAR (255), ShiftHours VARCHAR (255), ShiftDays VARCHAR (255), PhoneNumber VARCHAR(15));` to create a `stylists` table
+     - `CREATE TABLE clients (ClientId INT NOT NULL AUTO_INCREMENT PRIMARY KEY, Name VARCHAR (255), AppointmentDateTime VARCHAR(255), PhoneNumber VARCHAR (15), StylistId INT);` to create another new `clients` table
 5. To run the console app:
    - Navigate to `HairSalon.Solution/HairSalon` in your command line
    - Run the command `dotnet restore` to restore the dependencies that are listed in `HairSalon.csproj`
